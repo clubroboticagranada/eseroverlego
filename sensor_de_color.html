@@ -1,0 +1,142 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Sensor de color | ESEROver LEGO Spike </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="CRG" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-27"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">ESEROver LEGO Spike</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Exploración espacial</a></li>
+   <li class="current-page-parent"><a href="eserover_con_lego_spike_prime.html" class="current-page-parent daddy">ESEROver con Lego Spike Prime</a>
+   <ul>
+      <li><a href="componentes_del_kit_lego.html" class="no-ch">Componentes del Kit Lego</a></li>
+      <li><a href="entorno_de_programacin.html" class="no-ch">Entorno de programación</a></li>
+      <li class="current-page-parent"><a href="aprendizaje_bsico.html" class="current-page-parent daddy">Aprendizaje básico</a>
+      <ul>
+         <li><a href="movimientos_bsicos_con_motores.html" class="no-ch">Movimientos básicos con motores</a></li>
+         <li><a href="sensor_de_ultrasonidos.html" class="no-ch">Sensor de ultrasonidos</a></li>
+         <li id="active"><a href="sensor_de_color.html" class="active no-ch">Sensor de color</a></li>
+         <li><a href="girscopo.html" class="no-ch">Giróscopo</a></li>
+         <li><a href="comunicacin_entre_hubs_en_desarrollo.html" class="no-ch">Comunicación entre hubs (en desarrollo)</a></li>
+      </ul>
+      </li>
+      <li><a href="misiones_de_exploracin.html" class="daddy">Misiones de exploración</a>
+      <ul class="other-section">
+         <li><a href="desplazamiento_de_punto_a_punto.html" class="no-ch">Desplazamiento de punto a punto</a></li>
+         <li><a href="evitar_obstculos.html" class="no-ch">Evitar obstáculos</a></li>
+         <li><a href="sensor_de_color0.html" class="daddy">Sensor de color</a>
+         <ul class="other-section">
+            <li><a href="movimiento_con_tarjetas.html" class="no-ch">Movimiento con tarjetas</a></li>
+            <li><a href="detencin_por_color.html" class="no-ch">Detención por color</a></li>
+            <li><a href="deteccin_de_suelo__roca_en_desarrollo.html" class="no-ch">Detección de suelo / roca (en desarrollo)</a></li>
+         </ul>
+         </li>
+         <li><a href="sensor_de_colisin.html" class="no-ch">Sensor de colisión</a></li>
+         <li><a href="control_remoto.html" class="no-ch">Control remoto</a></li>
+         <li><a href="mover_obstculo_en_desarrollo.html" class="no-ch">Mover obstáculo (en desarrollo)</a></li>
+      </ul>
+      </li>
+      <li><a href="programas.html" class="no-ch">Programas</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="sensor_de_ultrasonidos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="girscopo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Sensor de color</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id161">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">El sensor de color</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta161_138_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Este sensor se basa la identificación del color de la luz que reflejan los objetos al ser iluminados por una luz blanca que incorpora el propio sensor. Se puede trabajar también con el porcentaje global de luz reflejada sin importar el color del que se trate. Por tanto, son dos modos de trabajo compatibles y que detallamos seguidamente.</p>
+<table border="0" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 50%;"><img src="sensor_color.png" alt="" width="415" height="334" /></td>
+<td style="width: 50%;">
+<p style="text-align: justify;">Los bloques para trabajar con el sensor de color son lo que se muestran en la figura adjunta. El primero, se emplea para comprobar si la cantidad de luz reflejada supera o no alcanza un valor determinado.  Se emplea principalmente para seguir líneas marcadas en un tapete o coger referencias en puntos concretos de su recorrido. También podemos saber qué cantidad de luz reflejada hay usando el último bloque.  En realidad se puede aproximar a medir los grises existentes entre el blanco y negro. No medimos la cantidad de luz ambiente, se pide la luz reflejada, aunque por supuesto, la luz ambiente afecta a las mediciones del sensor.</p>
+<p>El otro modo de uso del sensor es para identificar alguno de los colores mostrados (CMY) y (RGB) más el blanco y el negro. También se puede especificar sin color (es decir, no hay un objeto próximo al sensor). No podremos identificar colores de pantallas digitales, sólo de objetos.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p style="text-align: justify;">Presentados los bloques con los que podemos trabajar para la identificación del colores, se proponen algunas tareas sencillas.</p>
+<p></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id162">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea 1. Identificación de los colores primarios</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta162_139_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">10 min</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">2</dd></dl><div class="pbl-task-description"><p style="text-align: justify;">Vamos a desarrollar un programa que realice tres acciones diferentes (Avance durante 2 segundos, Retroceso durante 2 segundos o Reproducir un sonido hasta acabar) en función de que el color identificado sea Rojo, Verde o Azul, respectivamente. Emplearemos para ello el sensor de color lateral, conectado al puerto E.  También el bloque de mover empleando los motores conectados a los puertos A y B. No olvides incluir el bloque motores en movimiento.</p>
+<p> </p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p><img src="color_01.png" alt="" width="486" height="505" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id163">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea 2. Avance hasta detectar tarjeta blanca</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta163_140_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">5 min</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">2</dd></dl><div class="pbl-task-description"><p>Se trata de activar el movimiento del robot mostrando una ficha roja al sensor lateral y detenerlo cuando le mostremos una ficha que el sensor detecte que la luz reflejada es mayor del 50% (color blanco por ejemplo). Nos podemos basar en la tarea anterior y realizar las oportunas modificaciones.</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p><img src="color_02.png" alt="" width="538" height="421" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id164">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Tarea 3. Secuencia de colores</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta164_141_2" class="block iDevice_content">
+<div class="exe-text"><p>Con esta tarea trataremos de detectar secuencias de colores. Es muy útil para programar el robot a base de códigos de color. Tras iniciar el movimiento del robot, éste se parará si detecta el color rojo por el sensor E. Después si detecta azul retrocederá 1 segundo y si detecta amarillo reproducirá un sonido.</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p><img src="colorplus.png" alt="" width="1139" height="859" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="sensor_de_ultrasonidos.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="girscopo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>

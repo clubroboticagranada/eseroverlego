@@ -1,0 +1,149 @@
+<!doctype html>
+<html lang="es">
+<head>
+<link rel="stylesheet" type="text/css" href="base.css" />
+<link rel="stylesheet" type="text/css" href="content.css" />
+<link rel="stylesheet" type="text/css" href="nav.css" />
+<meta http-equiv="content-type" content="text/html;  charset=utf-8" />
+<title>Giróscopo | ESEROver LEGO Spike </title>
+<link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+<meta name="author" content="CRG" />
+<link rel="license" type="text/html" href="http://creativecommons.org/licenses/by-sa/4.0/" />
+<meta name="generator" content="eXeLearning 2.9 - exelearning.net" />
+<!--[if lt IE 9]><script type="text/javascript" src="exe_html5.js"></script><![endif]-->
+<script type="text/javascript" src="exe_jquery.js"></script>
+<script type="text/javascript" src="common_i18n.js"></script>
+<script type="text/javascript" src="common.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+    </head>
+<body class="exe-web-site" id="exe-node-28"><script type="text/javascript">document.body.className+=" js"</script>
+<div id="content">
+<p id="skipNav"><a href="#main" class="sr-av">Saltar la navegación</a></p>
+<header id="header" ><div id="headerContent">ESEROver LEGO Spike</div></header>
+<nav id="siteNav">
+<ul>
+   <li><a href="index.html" class="daddy main-node">Exploración espacial</a></li>
+   <li class="current-page-parent"><a href="eserover_con_lego_spike_prime.html" class="current-page-parent daddy">ESEROver con Lego Spike Prime</a>
+   <ul>
+      <li><a href="componentes_del_kit_lego.html" class="no-ch">Componentes del Kit Lego</a></li>
+      <li><a href="entorno_de_programacin.html" class="no-ch">Entorno de programación</a></li>
+      <li class="current-page-parent"><a href="aprendizaje_bsico.html" class="current-page-parent daddy">Aprendizaje básico</a>
+      <ul>
+         <li><a href="movimientos_bsicos_con_motores.html" class="no-ch">Movimientos básicos con motores</a></li>
+         <li><a href="sensor_de_ultrasonidos.html" class="no-ch">Sensor de ultrasonidos</a></li>
+         <li><a href="sensor_de_color.html" class="no-ch">Sensor de color</a></li>
+         <li id="active"><a href="girscopo.html" class="active no-ch">Giróscopo</a></li>
+         <li><a href="comunicacin_entre_hubs_en_desarrollo.html" class="no-ch">Comunicación entre hubs (en desarrollo)</a></li>
+      </ul>
+      </li>
+      <li><a href="misiones_de_exploracin.html" class="daddy">Misiones de exploración</a>
+      <ul class="other-section">
+         <li><a href="desplazamiento_de_punto_a_punto.html" class="no-ch">Desplazamiento de punto a punto</a></li>
+         <li><a href="evitar_obstculos.html" class="no-ch">Evitar obstáculos</a></li>
+         <li><a href="sensor_de_color0.html" class="daddy">Sensor de color</a>
+         <ul class="other-section">
+            <li><a href="movimiento_con_tarjetas.html" class="no-ch">Movimiento con tarjetas</a></li>
+            <li><a href="detencin_por_color.html" class="no-ch">Detención por color</a></li>
+            <li><a href="deteccin_de_suelo__roca_en_desarrollo.html" class="no-ch">Detección de suelo / roca (en desarrollo)</a></li>
+         </ul>
+         </li>
+         <li><a href="sensor_de_colisin.html" class="no-ch">Sensor de colisión</a></li>
+         <li><a href="control_remoto.html" class="no-ch">Control remoto</a></li>
+         <li><a href="mover_obstculo_en_desarrollo.html" class="no-ch">Mover obstáculo (en desarrollo)</a></li>
+      </ul>
+      </li>
+      <li><a href="programas.html" class="no-ch">Programas</a></li>
+   </ul>
+   </li>
+</ul>
+</nav>
+<div id='topPagination'>
+<nav class="pagination noprt">
+<a href="sensor_de_color.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="comunicacin_entre_hubs_en_desarrollo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+<div id="main-wrapper">
+<section id="main">
+<header id="nodeDecoration"><h1 id="nodeTitle">Giróscopo</h1></header>
+<article class="iDevice_wrapper textIdevice em_iDevice" id="id165">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header iDevice_header_noIcon"><h1 class="iDeviceTitle">Sensor giróscopo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta165_129_2" class="block iDevice_content">
+<div class="exe-text"><p style="text-align: justify;">Vamos a utilizar el giróscopo interno del hub para estudiar su movimiento. Hay tres conceptos importantes que vamos a trabajar:  el alabeo, el cabeceo y el guiñado.</p>
+<p><img src="ChatGPT_Image_18_jun_2025,_09_02_32.png" alt="" width="273" height="273" style="display: block; margin-left: auto; margin-right: auto;" /></p>
+<p style="text-align: justify;">Si inclinamos el hub según la dirección más larga del ladrillo lo denominaremos cabeceo (Pitch de la imagen), si lo inclinamos lateralmente, es el alabeo y si lo giramos es el guiñado (flecha Roll). Los dos primeros conceptos son útiles para nosotros para utilizar un ladrillo como mando de control por ejemplo. También podemos emplear el cabeceo para darle más o menos potencia a un motor en función de la pendiente que tiene que subir. Vamos a hacer algunos ejercicios que nos muestre en qué consiste.</p>
+<p style="text-align: justify;"><strong>Tareas 1 y 2.</strong> Un programa que si inclinamos el hub hacia delante según su eje longitudinal (eje largo) nos muestre en pantalla la flecha -&gt;, si lo inclinamos hacia atras, flecha &lt;-, y si lo volcamos hacia la derecha o izquierda nos muestre la correspondiente flecha de sentido.</p>
+<p style="text-align: justify;"><strong>Tarea 3.</strong> Comprendiendo el guiñado. Vamos a realizar un programa que reproduzca un sonido cuando giremos el hub 90º</p>
+<p style="text-align: justify;"></p>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id166">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea 1. El cabeceo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta166_130_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">10 minutos</dd><dt class="pbl-task-participants"><span>Agrupamiento: Parejas</span></dt><dd class="pbl-task-participants">2</dd></dl><div class="pbl-task-description"><p style="text-align: justify;">Tarea 1. Diseña un programa que muestre en la pantalla del hub una flecha hacia arriba cuando inclines el hub hacia delante más de 30º y viceversa, es decir, una flecha hacia abajo cuando inclines el hub hacia ti más de 30º. Recuerda que trabajas con el concepto de cabeceo. Para escribir el programa deberás usar los elementos del menú luz (encender) y sensores (ángulo de cabeceo).</p>
+<p></p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p>Un posible solución a la tarea </p>
+<table border="0" style="width: 100%;">
+<tbody>
+<tr>
+<td style="width: 50.9813%;"><img src="tarea_1_giro.png" alt="" width="488" height="428" /></td>
+<td style="width: 49.0187%;">
+<p>Hemos empleado el bucle por siempre para poder experimentar indefinidamente el resultado de mover el hub. Se ha incluido el condicional si para realizar una acción sólo cuando se cumplan los requisitos establecidos, es decir, que se incline el hub los grados indicados.</p>
+<p>En sensor de ángulo hemos fijado cabeceo porque queremos medir la inclinación del hub según la dirección longitudinal.</p>
+<p>Hemos empleado el bloque de encender para mostrar las flechas de acuerdo a la dirección en la que se inclina el hub.</p>
+</td>
+</tr>
+</tbody>
+</table>
+<p></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id167">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea 2. El alabeo</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta167_137_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">3 minutos</dd><dt class="pbl-task-participants"><span>Agrupamiento: Parejas</span></dt><dd class="pbl-task-participants">2</dd></dl><div class="pbl-task-description"><p>Tarea 2. Vamos a realizar la misma tarea que la anterior, sólo que trabajaremos con el ángulo de alabeo. Vamos a modificar las flechas anteriores por derecha e izquierda y veamos que ocurre ahora cuando inclinamos el hub hacia los lados.</p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<article class="iDevice_wrapper pblIdevice em_iDevice em_iDevice_activity" id="id168">
+<div class="iDevice emphasis1" >
+<header class="iDevice_header"><h1 class="iDeviceTitle">Tarea 3. Ángulo de guiñada</h1></header>
+<div class="iDevice_inner">
+<div class="iDevice_content_wrapper">
+<div id="ta168_147_2" class="block iDevice_content">
+<dl class="pbl-task-info"><dt class="pbl-task-duration"><span>Duración:</span></dt><dd class="pbl-task-duration">10 minutos</dd><dt class="pbl-task-participants"><span>Agrupamiento:</span></dt><dd class="pbl-task-participants">2</dd></dl><div class="pbl-task-description"><p style="text-align: justify;">Otro de los ángulos que nos permite obtener el hub de lego es el ángulo de guiñada o ángulo de giro del propio hub sobre su eje Z, muy útil para movimiento exactos relativos. Vamos a aprender cómo usarlo.</p>
+<p style="text-align: justify;">Tarea 3. Vamos a estudiar el ángulo de giro del hub sobre su propio eje Z, es decir, el giro de rotación. A este ángulo Lego le suele llamar ángulo de guiñada, y suele ser un valor relativo, por lo que cada vez que queramos medir el giro hay que establecer una puesta a 0, y se medirá el giro a partir de esa posición inicial. El ángulo se mide en grados negativos si el giro es a la izquierda o positivos para giros a la derecha.</p>
+<p style="text-align: justify;">Vamos a realizar un simple programa que gire los motores hasta que el robot se posicione a 90º a la derecha. Utilizaremos la puesta del ángulo a 0º y comprobaremos que su posición ha alcanzado el punto deseado. Recuerda utilizar el bloque motores derecha 100.</p></div><div class="iDevice_buttons feedback-button js-required"><input type="button" class="feedbackbutton" value="Mostrar retroalimentación" /></div><div class="feedback js-feedback js-hidden"><p><img src="giro_guinada.png" alt="" width="457" height="315" /></p></div>
+</div>
+</div>
+</div>
+</div>
+</article>
+<div id="packageLicense" class="cc cc-by-sa">
+<p><span>Obra publicada con</span> <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Licencia Creative Commons Reconocimiento Compartir igual 4.0</a></p>
+</div>
+</section>
+</div>
+<div id='bottomPagination'>
+<nav class="pagination noprt">
+<a href="sensor_de_color.html" class="prev"><span><span>&laquo; </span>Anterior</span></a> <span class="sep">| </span><a href="comunicacin_entre_hubs_en_desarrollo.html" class="next"><span>Siguiente<span> &raquo;</span></span></a>
+</nav>
+</div>
+</div>
+<p id="made-with-eXe"><a href="https://exelearning.net/" target="_blank" rel="noopener"><span>Creado con eXeLearning<span> (Ventana nueva)</span></span></a></p><script type="text/javascript" src="_style_js.js"></script></body></html>
