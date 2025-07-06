@@ -86,16 +86,16 @@ body{padding:0;text-align:center}
 @media all and (max-width: 400px){.pagination .page-counter{overflow:hidden;clip:rect(0,0,0,0);height:0;}
 }
 body{/*bodyBGColor*/background-color:#ffffff;}
-#topPagination .page-counter{color:#a0550e;}
+#topPagination .page-counter{color:#666666;}
 #siteNav,.pagination a,#skipNav,#nav-toggler{/*navFontSize*/font-size:90%;}
-#siteNav,#siteNav a{/*navBGColor*/background-color:#f7e5d4;/*navAColor*/color:#555555;/*navBorderColor*/border-color:#dddddd;}
-@media screen and (min-width: 701px) and (max-width: 1015px){#siteNav,#siteNav ul{background-color:#f7e5d4;border-color:#dddddd;}
-#siteNav li{background-color:#f7e5d4;}
+#siteNav,#siteNav a{/*navBGColor*/background-color:#f9e1ca;/*navAColor*/color:#555555;/*navBorderColor*/border-color:#b2adad;}
+@media screen and (min-width: 701px) and (max-width: 1015px){#siteNav,#siteNav ul{background-color:#f9e1ca;border-color:#b2adad;}
+#siteNav li{background-color:#f9e1ca;}
 }
-#siteNav a:hover,#siteNav a:focus,#siteNav a.active{/*navHoverBGColor*/background-color:#ffaa56;/*navAHoverColor*/color:#000000;}
-@media screen and (min-width: 701px) and (max-width: 1015px){#siteNav li:hover,#siteNav li.sfhover{background-color:#ffaa56;}
+#siteNav a:hover,#siteNav a:focus,#siteNav a.active{/*navHoverBGColor*/background-color:#f7b77b;/*navAHoverColor*/color:#000000;}
+@media screen and (min-width: 701px) and (max-width: 1015px){#siteNav li:hover,#siteNav li.sfhover{background-color:#f7b77b;}
 }
-.pagination{border-color:#dddddd;}
+.pagination{border-color:#d3d0cd;}
 #bottomPagination{background-color:#ffffff;}
 /* eXeLearning Style Designer (custom CSS) */
 

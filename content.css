@@ -124,7 +124,7 @@ background:#ededed;
 /* eXeLearning Style Designer */
 .iDevice_header{
 /*emTitleColor*/
-color:#ff7f00;
+color:#d17927;
 /*emTitleBGColor*/
 background-color:#ffffff;border-color:#dddddd;
 }
@@ -186,30 +186,30 @@ color:#2495ff;
 #header,#emptyHeader,#nodeDecoration{
 height:auto!important;
 /*headerHeight*/
-height:100px;min-height:100px;
+height:125px;min-height:125px;
 /*headerBGColor*/
-background-color:#f7e5d4;
+background-color:#f9e1ca;
 /*headerBGURL*/
-background-image:url(avatar_club.png);
+background-image:url(LogoCRG_ParqueESERO+.png);
 /*headerBGRepeat*/
 background-repeat:no-repeat;
 /*headerBGPosition*/
 background-position:50% 50%;border:1px solid /*headerBorderColor*/
-#dddddd;
+#d3d0cd;
 }
 #headerContent{
 /*headerTitleTopMargin*/
 padding-top:70px;
 /*headerTitleColor*/
-color:#a0550e;
+color:#666666;
 /*headerTitleTextShadowColor*/
-text-shadow:1px 1px 1px #ffaa56;
+text-shadow:1px 1px 1px #fcc088;
 /*headerTitleFontSize*/
 font-size:100%;
 }
 #siteFooter{
 border:1px solid /*footerBorderColor*/
-#dddddd;
+#d3d0cd;
 /*footerBGColor*/
 background-color:#ffffff;
 }
